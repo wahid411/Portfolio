@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h5 class="logo">Wahid.Dev</h5>
+        <div class="menu-icon">
+      <span></span>
+      <span></span>
+    </div>
+        <div class="navbar">
+            <a href="#" class="blue">Home</a>
+            <a href="#">Project</a>
+            <a href="#">About</a>
+        </div>
+        <div class="nav-icon"><i class="fa-regular fa-comment-dots"></i></div>
+    </div>
+    <div class="about-self">
+        <div class="self">
+        <h3 class="name">Hey, I'am Wahid</h3>
+        <h1 class="main-heading"><span>Front</span>end <span class="break">Developer</span></h1>
+
+        <p>I'm a frontend developer based in Pakistan, I'll help you<br> build beautiful websites your users will love.</p>
+        <div class="btn">
+            <button class="btn-1">Get inTouch</button>
+            <button class="btn-2">Browse Project</button>
+        </div>
+       
+        </div>
+         
+        <div class="img-circle">
+        <div class="self-img"></div>
+        </div>
+    </div>
+    
+</body>
+<script>
+    const menuIcon = document.querySelector('.menu-icon');
+    const navbar = document.querySelector('.navbar');
+
+    menuIcon.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+    });
+  </script>
+</html>
