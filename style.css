@@ -69,7 +69,6 @@ a:hover {
 
 .main-heading {
     font-size: 75px;
-    /* Full screen par bara hi rahega */
     font-weight: bolder;
     color: #3b3e45;
 }
@@ -83,6 +82,9 @@ a:hover {
 
 span {
     color: rgba(41, 41, 229, 0.959);
+}
+.break{
+    color: black;
 }
 
 p {
@@ -153,7 +155,7 @@ p {
     /* yahan se proper gap aayega */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .menu-icon {
         display: block;
     }
@@ -165,6 +167,8 @@ p {
 
     .logo {
         margin-bottom: 40px;
+        position: relative;
+        right: 15px;
     }
 
     .menu-icon {
@@ -201,7 +205,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 30px 60px 0 0;
+        margin: 30px 0px 0 15px;
 
     }
 
@@ -210,11 +214,20 @@ p {
         white-space: nowrap;
         margin-top: 5px;
     }
-
-    .break::before {
-        content: " ";
-    }
     .img-circle{
-        margin: 20px 0 0 30px;
+        height: 270px;
+        width: 270px;
+        margin-top: 60px;
     }
+    .self-img{
+        height: 230px;
+        width: 230px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+
+    
 }
+    
