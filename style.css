@@ -84,7 +84,7 @@ span {
     color: rgba(41, 41, 229, 0.959);
 }
 .break{
-    color: black;
+    color: #24262f  ;
 }
 
 p {
@@ -154,6 +154,106 @@ p {
     margin: 4px 0;
     /* yahan se proper gap aayega */
 }
+.project-heading{
+    font-size: 50px;
+    margin-top: 120px;
+    margin-left: 50px;
+    color: #24262f;
+}
+.project-image{
+    height: 280px;
+    width: 450px;
+    background-image: url(dashboard.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.project-image-2{
+    height: 280px;
+    width: 650px;
+    background-image: url(laptop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.project-image-3{
+     height: 280px;
+    width: 650px;
+    background-image: url(project-2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+.project-image-4{
+    height: 280px;
+    width: 450px;
+    background-image: url(project1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.project-scetion {
+    margin-top: 30px;
+  display: flex;
+  justify-content: center; /* center me dono project */
+  gap: 40px;               /* dono ke beech space */
+  width: 100%;
+
+}
+
+.project-p{
+    font-size: 17px;
+    margin-top: 30px;
+}
+.ecocart,
+.taskflow{
+    position: relative;
+    top: 20px;
+    color: #24262f;
+}
+.fa-arrow-up-right-from-square{
+    color: rgba(41, 41, 229, 0.959);
+}
+.experience{
+    display: flex;
+    gap: 190px;
+    margin-left: 60px;
+    margin-top: 30px;
+}
+
+.tag{
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+.para-sec{
+    font-size: 17px;
+
+}
+.fa-check{
+    margin-right: 20px;
+}
+.enginer-p{
+     color: black;
+}
+.exp-links-active{
+    color: rgba(41, 41, 229, 0.959);
+}
+.experience-catagory {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 20px;         
+    border-left: 2px solid  rgba(41, 41, 229, 0.959); 
+}
+
+.experience-heading{
+    font-size: 53px;
+    font-weight: bolder;
+    margin: 120px 0 0 43px;
+    color: #24262f;
+}
 
 @media (max-width: 425px) {
     .menu-icon {
@@ -174,7 +274,7 @@ p {
     .menu-icon {
         display: block;
         position: absolute;
-        top: 15px;
+        top: 25px;
         right: 20px;
     }
 
@@ -225,6 +325,57 @@ p {
     }
     p{
         font-size: 15px;
+    }
+    .project-scetion{
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    .project-image,
+    .project-image-2,
+    .project-image-3,
+    .project-image-4{
+        width: 90%;
+        margin-left: 18px;
+        
+    }
+    .project-p,
+    .taskflow,
+    .ecocart{
+        margin-left: 18px;
+    }
+    .project-p{
+        max-width: 320px;
+    }
+    .experience-catagory{
+        display: none;
+    }
+    .experience-heading{
+        font-size: 35px;
+        position: relative;
+        right: 27px;
+        font-weight: bolder;
+    }
+    .subject{
+        margin-right: 65px;
+        max-width: 250px;
+    }
+    .para-sec{
+        display: -webkit-box;
+    -webkit-line-clamp: 4;   /* chhoti screen par 4 lines force */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    }
+    .enginer-p{
+        font-size: 25px;
+        position: relative;
+        right: 40px;
+    }
+    .tag{
+        position: relative;
+        right: 39px;
     }
 
 
