@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h5 class="logo">Wahid.Dev</h5>
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="project.html">Project</a>
+      <a href="#" class="blue">About</a>
+    </div>
+    <div class="nav-icon"><i class="fa-regular fa-comment-dots"></i></div>
+  </div>
+  <div class="about-page">
+    <h1 class="about-heading">About Me<span>.</span></h1>
+    <p class="next-p">Developing beautiful and functional websites is what I love doing, and that's why I give my all in
+      every new<br> challenge.</p>
+  </div>
+  <div class="about-hero">
+    <div class="img-part-3">
+      <h4 class="flow-heading">My Stack.</h4>
+      <div class="img-flow"></div>
+    </div>
+    <div class="img-part-4">
+      <h4 class="flow-heading">My Special Place</h4>
+      <div class="img-flow-2"></div>
+    </div>
+
+  </div>
+  <h1 class="last-heading">My Story<span>.</span></h1>
+  <div class="story">
+    <p class="story-para">My journey as a front-end developer started back in 2010, working as a <span>freelancer</span>
+      for clients all over the world for several years.<br>
+
+      After being on my own for a while, I decided to enter the corporate world, and I started working as a software
+      developer at Webflow,<br> the same platform I was using with my freelance clients.
+
+      After some exciting months of work at <span>Webflow,</span> I decided to transition to <span>Stripe,</span><br>
+      where I returned what I love: front-end development.<br>
+
+      <span>My success</span> quickly compounded I started receiving job offers from the biggest names in the
+      industry.<br>
+
+      All these opportunities led me to travel the world. Eventually, however, I decided to settle down for a more calm
+      and simple routine, and<br> I'm now working at Apple. And you know what? I love what I do! 💜
+    </p> 
+    <section class="timeline">
+  <h2>My Journey.</h2>
+
+  <div class="timeline-item">
+    <div class="number-container">
+      <div class="number">01</div>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="content">
+      <h4>Started as a Learner</h4>
+      <p>I began my coding journey by experimenting with HTML and CSS, 
+         trying to replicate simple designs.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="number-container">
+      <div class="number">02</div>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="content">
+      <h4>Exploring JavaScript</h4>
+      <p>Slowly moved towards JavaScript to add interactivity and build 
+         more dynamic experiences.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="number-container">
+      <div class="number">03</div>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="content">
+      <h4>Learning Frameworks</h4>
+      <p>Dove into frameworks like React and experimented with modern UI 
+         libraries to improve my skills.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="number-container">
+      <div class="number">04</div>
+      <div class="vertical-line"></div>
+    </div>
+    <div class="content">
+      <h4>Freelancing Projects</h4>
+      <p>Started taking small freelance projects, learning client 
+         communication and project delivery.</p>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="number-container">
+      <div class="number">05</div>
+      <!-- no line under last number -->
+    </div>
+    <div class="content">
+      <h4>Future Goals</h4>
+      <p>Now aiming to grow as a professional developer and contribute 
+         to impactful projects around the world.</p>
+    </div>
+  </div>
+</section>
+<footer>
+    <div class="footer-section">
+      <div class="footer-lins">
+        <a href="#" class="footer-links-active">Home</a>
+        <a href="#" class="footer-links">Projects</a>
+        <a href="#" class="footer-links">About</a>
+        <a href="#" class="footer-links">Contact</a>
+      </div>
+
+      <div class="-link-btn">
+        <h2 class="footer-heading">we work together<span> ?</span></h2>
+        <button class="footer-btn">Get in touch</button>
+        <button class="footer-btn-2">Browse Project</button>
+      </div>
+    </div>
+   
+    <div class="copyright">
+       <div class="icon">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-solid fa-inbox"></i>
+      <i class="fa-solid fa-cat"></i>
+      <i class="fa-solid fa-globe"></i>
+    </div>
+      <p class="copyright-p">©2023 All Rights Reserved.</p>
+      <p class="copyright-p-2">Made with 💜 by Abdul-Wahid</p>
+    </div>
+
+  </footer>
+
+
+
+
+<script>
+  window.addEventListener('scroll', () => {
+  document.querySelectorAll('.timeline-item').forEach(item => {
+    const line = item.querySelector('.vertical-line');
+    if (!line) return; // agar last item hai to skip karo
+
+    const rect = item.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight * 0.9) {
+      const grow = Math.min((windowHeight * 0.9 - rect.top), 120);
+      line.style.height = grow + 'px';
+    } else {
+      line.style.height = '0';
+    }
+  });
+});
+const menuIcon = document.querySelector('.menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.addEventListener('click', () => {
+  navbar.classList.toggle('show');
+});
+
+
+
+
+</script>
+  

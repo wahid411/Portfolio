@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h5 class="logo">Wahid.Dev</h5>
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+    </div>
+    <div class="navbar">
+      <a href="index.html" >Home</a>
+      <a href="project.html" class="blue">Project</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="nav-icon"><i class="fa-regular fa-comment-dots"></i></div>
+  </div>
+  <div class="hero">
+  <h1 class="hero-heading">My <span class="color-change">best </span>Creations</h1>
+  <p class="hero-p">Designing and Developing Robust and Stylish Web Applications<br> for a Decade and Counting</p>
+</div>
+
+<div class="sticky-gallery">
+
+  <!-- Section 1 -->
+  <section class="panel">
+    <div class="img-project" style="background-image:url('UI-image.jpg')"></div>
+    <h1 class="foodie">FoodieFinder</h1>
+    <p class="foodie-p">Modern-Looking restaurant Discover Platform featuring real-time<br>Search and review and rating</p>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="panel">
+    <div class="img-project" style="background-image:url('img-2.jpg')"></div>
+    <h1 class="foodie">EventPlanner</h1>
+    <p class="foodie-p">Event planning web application, enabling users to organise and<br> manage events effortlessly.</p>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="panel">
+    <div class="img-project" style="background-image:url('img-3.jpg')"></div>
+    <h1 class="foodie">Ecocart</h1>
+    <p class="foodie-p">E-commerce platform promoting eco-friendly products with<br> payment integration.</p>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="panel">
+    <div class="img-project" style="background-image:url('img-4.jpg')"></div>
+    <h1 class="foodie">Taskflow</h1>
+    <p class="foodie-p">Task management system with drag-and-drop, real-time<br> collaboration, and responsive layout.</p>
+  </section>
+
+</div>
+
+<footer>
+    <div class="footer-section">
+      <div class="footer-lins">
+        <a href="#" class="footer-links-active">Home</a>
+        <a href="#" class="footer-links">Projects</a>
+        <a href="#" class="footer-links">About</a>
+        <a href="#" class="footer-links">Contact</a>
+      </div>
+
+      <div class="-link-btn">
+        <h2 class="footer-heading">Interesting in working together<span> ?</span></h2>
+        <button class="footer-btn">Get in touch</button>
+        <button class="footer-btn-2">Browse Project</button>
+      </div>
+    </div>
+   
+    <div class="copyright">
+       <div class="icon">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-solid fa-inbox"></i>
+      <i class="fa-solid fa-cat"></i>
+      <i class="fa-solid fa-globe"></i>
+    </div>
+      <p class="copyright-p">©2023 All Rights Reserved.</p>
+      <p class="copyright-p-2">Made with 💜 by Abdul-Wahid</p>
+    </div>
+
+  </footer>
+
+<script>
+  const menuIcon = document.querySelector('.menu-icon');
+  const navbar = document.querySelector('.navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+
+
+  
+    
+</body>
+</html>
