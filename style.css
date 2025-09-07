@@ -9,6 +9,7 @@ body {
     background-color: rgba(245, 245, 245, 0.887);
 }
 
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -317,6 +318,7 @@ footer{
 .footer-heading{
     margin-top: 55px;
     color: #24262f;
+    font-size: 30px;
 }
 .footer-btn{
     padding: 8px 18px;
@@ -524,6 +526,11 @@ h4{
     color: #24262f;
     font-size: 2.8rem;
 }
+.about-footer-section{
+    display: flex;
+    gap: 500px;
+}
+
 
 @media (max-width: 425px) {
     .menu-icon {
@@ -745,6 +752,16 @@ h4{
   .timeline{
     margin-right: 70px;
   }
+  .about-footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .copyright-2{
+    margin-left: 60px;
+  }
+   
+  
 
 
     
